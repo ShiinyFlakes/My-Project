@@ -1,11 +1,7 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
 
-   <!--- basic page needs
-   ================================================== -->
    <meta charset="utf-8">
 	<title>Mago's CSS Style Guide</title>
 	<meta name="description" content="">  
@@ -15,9 +11,8 @@
  	
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">
 
-   <style media="screen">
+   <style>
 
    	#styles { 
    		background: white;
@@ -30,6 +25,13 @@
      	#styles .section-intro {
    		max-width: 800px;
      	}
+
+
+	.absatz:first-letter { 
+		    font-size: 200%;
+			color: rgb(63, 55, 55);
+            font-weight: bold; }
+
     </style>
    
 
@@ -43,7 +45,7 @@
    	
 	<nav>
 	<div class="navi">
-		<a href="index.html"  title="" >Resume</a>
+		<a href="index.html"  title="" >Startseite</a>
 		<a href="index.html" title="" >Portfolio</a>
 		<a href="index.html" title="" >Services</a>
 		<a href="#contact" title="" >Contact</a>
@@ -63,7 +65,7 @@
 
    			<h1> Mago's CSS Style Guide.</h1>
 
-   			<p>Hey Leute ich habe einen kleinen Styleguide für HTML und CSS erstellt. Hoffe ihr könnt hilfreiche Informationen für euch gewinnen. </p>   			
+   			<p>Hey Leute ich habe einen kleinen Styleguide für CSS erstellt. Hoffe ihr könnt hilfreiche Informationen für euch gewinnen. </p>   			
 
    		</div>
 
@@ -71,7 +73,7 @@
 
      	<div class="row">
 
-     		<div class="col-six tab-full">
+     		<div>
 
 		      <h3>Paragraphen und Bilder</h3>
 
@@ -93,11 +95,11 @@
 
          </div>
 
-         <div class="col-six tab-full">
+         <div>
 
             <h3>Großer Anfangsbuchstabe/Buch</h3>
 
-	         <p>John Fitzgerald Kennedy, meist kurz John F. Kennedy (* 29. Mai 1917 in Brookline, Massachusetts; † 22. November 1963 in Dallas, Texas), privat „Jack“ genannt, später häufig nur bei seinen Initialen JFK, war als Politiker der Demokratischen Partei von 1961 bis 1963 der 35. Präsident der Vereinigten Staaten von Amerika. In seine Amtszeit während der Hochphase des Kalten Krieges fielen historische Ereignisse wie die Invasion in der Schweinebucht, die Kubakrise, der Bau der Berliner Mauer, der Beginn der bemannten Raumfahrt, die Eskalation des Vietnamkriegs sowie die Zeit des zivilen Ungehorsams der afroamerikanischen Bürgerrechtsbewegung. Kennedy war der erste und bis zum Amtsantritt von Joe Biden im Januar 2021 auch der einzige US-Präsident römisch-katholischer Konfession. Wegen seines vergleichsweise geringen Alters und seines Charismas verkörperte er für viele die Hoffnung auf eine Erneuerung der USA. Die Hintergründe seiner Ermordung 1963 sind bis heute in der Öffentlichkeit umstritten.
+	         <p class="absatz">John Fitzgerald Kennedy, meist kurz John F. Kennedy (* 29. Mai 1917 in Brookline, Massachusetts; † 22. November 1963 in Dallas, Texas), privat „Jack“ genannt, später häufig nur bei seinen Initialen JFK, war als Politiker der Demokratischen Partei von 1961 bis 1963 der 35. Präsident der Vereinigten Staaten von Amerika. In seine Amtszeit während der Hochphase des Kalten Krieges fielen historische Ereignisse wie die Invasion in der Schweinebucht, die Kubakrise, der Bau der Berliner Mauer, der Beginn der bemannten Raumfahrt, die Eskalation des Vietnamkriegs sowie die Zeit des zivilen Ungehorsams der afroamerikanischen Bürgerrechtsbewegung. Kennedy war der erste und bis zum Amtsantritt von Joe Biden im Januar 2021 auch der einzige US-Präsident römisch-katholischer Konfession. Wegen seines vergleichsweise geringen Alters und seines Charismas verkörperte er für viele die Hoffnung auf eine Erneuerung der USA. Die Hintergründe seiner Ermordung 1963 sind bis heute in der Öffentlichkeit umstritten.
 		  		</p>
 
 		      <h3>Kleingedrucktes</h3>
@@ -112,7 +114,7 @@
 
 		<div class="row">
 
-		  	<div class="col-six tab-full">
+		  	<div>
 
 		      <h3>Zitate</h3>
 
@@ -124,7 +126,7 @@
 
 		   </div>
 
-		   <div class="col-six tab-full">
+		   <div>
 
 		      <h3>Block Zitate</h3>
 
@@ -146,30 +148,31 @@
 
 		   </div>
 
-		</div> <!-- /row -->
+		</div>
 
-		<div class="row half-bottom">
+		<div>
 
-		 	<div class="col-six tab-full">
+		 	<div>
 
-		      <h3>Example Lists</h3>
+		      <h3>Beispiel Liste</h3>
 
 		      <ol>
-				   <li>Here is an example</li>
-				   <li>of an ordered list.</li>
-				   <li>A parent list item.
+				   <li>Das ist ein Beispiel</li>
+				   <li>für eine geordnete Liste</li>
+				   <li>Ein Eltern element
 				   	<ul>
-				   		<li>one</li>
-				   		<li>two</li>
-				   		<li>three</li>
+				   		<li>Morgen</li>
+				   		<li>Mittag</li>
+				   		<li>Abend</li>
 				   	</ul>
 				   </li>
-				   <li>A list item.</li>
+				   
 			   </ol>
 
 		      <ul class="disc">
-				   <li>Here is an example</li>
-				   <li>of an unordered list.</li>
+				   <li>Beispiel ungeordnete Liste</li>
+				   <li>hier ist eine</li>
+				   <li>ungeordnete Liste</li>
 			   </ul>	
 
 			   <h3>Definition Lists</h3>	            
@@ -186,7 +189,7 @@
 
 		   </div>
 
-		   <div class="col-six tab-full">		                  
+		   <div>		                  
 
 		      <h3>Headers</h3>
 
@@ -226,19 +229,9 @@
 
 		   </div>	      	
 
-		</div> <!-- /row -->
+		</div> 
 
-		<div class="row half-bottom">
-
-      	<div class="col-six tab-full">
-
-      		<h3>Responsive Image</h3>
-
-      		<p><img alt="none" src="images/portfolio/modals/m-lighthouse.jpg"></p>
-
-      	</div>
-
-      	<div class="col-six tab-full">
+		<div>
 
       		<h3>Responsive video</h3>
 
@@ -247,8 +240,6 @@
             </div>
 
       	</div>
-      	
-      </div> <!-- /row -->
 
       <div class="row add-bottom">
 
@@ -288,11 +279,11 @@
 
       	</div>
       	
-      </div> <!--row -->
-
+      </div>
+	  
       <div class="row">
 
-		   <div class="col-six tab-full">
+		   <div>
 
 		      <h3>Form Styles</h3>
 
@@ -326,7 +317,7 @@
 
 		      </div>
 
-		      <div class="col-six tab-full">
+		      <div>
 
 		      		<h3>Skill Bars</h3>
 
@@ -353,36 +344,14 @@
 						   	<strong>Wordpress</strong>
 						   </li>
 		      
-						</ul> <!-- /skill-bars -->
-
+						</ul> 
 			        
-			        <h3>Alert Boxes</h3> 
-			        
-			        <div class="alert-box ss-error hideit">
-				        <p>Error Message. Your Message Goes Here.</p>
-				        <i class="fa fa-times close"></i>
-			        </div><!-- /error -->
-			        
-			        <div class="alert-box ss-success hideit">
-				        <p>Success Message. Your Message Goes Here.</p>
-				        <i class="fa fa-times close"></i>
-			        </div><!-- /success -->
-			        
-			        <div class="alert-box ss-info hideit">
-				         <p>Info Message. Your Message Goes Here.</p>
-				        <i class="fa fa-times close"></i>
-			        </div><!-- /info -->
-			        
-			        <div class="alert-box ss-notice hideit">
-				        <p>Notice Message. Your Message Goes Here.</p>
-				        <i class="fa fa-times close"></i>
-			        </div><!-- /notice -->
 			        
 			  </div>	         
 
-		</div> <!-- /row -->
+		</div> 
 		   	
-   </section> <!--styles -->	
+   </section> 	
 
 	
    <!-- contact
@@ -400,9 +369,9 @@
    		</div> 
    	</div> <!-- /section-intro -->
 
-   	<div class="row contact-form">
+   	<div>
 
-   		<div class="col-twelve">
+   		<div>
 
             <!-- form -->
             <form name="contactForm" id="contactForm" method="post" action="none">
@@ -504,41 +473,25 @@
    <footer>
      	<div class="row">
 
-     		<div class="col-six tab-full pull-right social">
 
      			<ul class="footer-social">        
-			      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			      <li><a href="#"><i class="fa fa-behance"></i></a></li>
-			      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-			      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			      <li><a href="#"><i class="github">Github.com</i></a></li>
+			      <li><a href="#"><i class="netlify">Netlify.com</i></a></li>
+			      <li><a href="#"><i class="slack">slack.com</i></a></li>
 			   </ul> 
 	      		
 	      </div>
 
-      	<div class="col-six tab-full">
+      	<div>
 	      	<div class="copyright">
-		        	<span>© Copyright Kards 2016.</span> 
-		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+		        	<span>© Copyright by Magomed Elmurzaev</span> 
+	         	
 		         </div>		                  
 	      	</div>
 
-	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div>
-
-      	</div> <!-- /row -->     	
+      		
    </footer>    
 
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
-
-   <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
 
 </body>
 
